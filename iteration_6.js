@@ -12,7 +12,7 @@ function upgradedToys(param) {
   for (let value of param) {
     let nickname = value.name;
     if (nickname.includes('gato')) {
-      toys.pop();
+      param.pop();
     } else {
       console.log(value);
     }
