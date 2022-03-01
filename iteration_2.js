@@ -17,6 +17,10 @@ let passes = alumns.map(function (item) {
     let o = Object.assign({}, item);
     o.isApproved = true;
     return o;
+  } else {
+    let o = Object.assign({}, item);
+    o.isApproved = false;
+    return o;
   }
   return item;
 });
