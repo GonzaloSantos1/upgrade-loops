@@ -17,3 +17,5 @@ for (i = 0; i < placesToTravel.length; i++) {
 }
 
 console.log(placesToTravel);
+
+//prueba
