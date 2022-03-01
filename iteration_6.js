@@ -8,11 +8,15 @@ const toys = [
   {id: 40, name: 'El gato felix'},
 ];
 
-for (let value of toys) {
-  let nickname = value.name;
-  if (nickname.includes('gato')) {
-    toys.pop();
-  } else {
-    console.log(value);
+function upgradedToys(param) {
+  for (let value of param) {
+    let nickname = value.name;
+    if (nickname.includes('gato')) {
+      toys.pop();
+    } else {
+      console.log(value);
+    }
   }
 }
+
+upgradedToys(toys);
