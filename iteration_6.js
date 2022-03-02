@@ -10,9 +10,8 @@ const toys = [
 
 function upgradedToys(param) {
   for (let value of param) {
-    let nickname = value.name;
-    if (nickname.includes('gato')) {
-      param.pop();
+    if (value.name.includes('gato')) {
+      param.splice(param.indexOf(value));
     } else {
       console.log(value);
     }
