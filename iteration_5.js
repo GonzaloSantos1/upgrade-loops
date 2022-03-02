@@ -13,6 +13,7 @@ for (i = 0; i < placesToTravel.length; i++) {
   let erase = placesToTravel[i].id;
   if (erase == 11 || erase == 40) {
     placesToTravel.splice(i, 1);
+    i--;
   }
 }
 
