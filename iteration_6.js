@@ -12,10 +12,9 @@ function upgradedToys(param) {
   for (let value of param) {
     if (value.name.includes('gato')) {
       param.splice(param.indexOf(value));
-    } else {
-      console.log(value);
     }
   }
 }
 
 upgradedToys(toys);
+console.log(toys);
